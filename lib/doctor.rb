@@ -30,6 +30,7 @@ class Doctor
         @patients << appt.patient
       end
     end
+    @patients
   end
 
 
