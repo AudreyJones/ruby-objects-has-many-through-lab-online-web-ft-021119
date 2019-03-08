@@ -30,4 +30,5 @@ class Patient
       end
     end
     @doctors
+  end
 end
