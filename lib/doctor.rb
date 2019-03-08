@@ -29,6 +29,7 @@ class Doctor
       if appt.doctor == self
         @patients << appt.patient
         binding.pry
+      end
     end
   end
 
