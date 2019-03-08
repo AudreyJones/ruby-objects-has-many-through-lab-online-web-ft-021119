@@ -23,4 +23,10 @@ class Patient
     Appointment.new(date, self, doctor)
   end
 
+  def doctors
+    Appointment.all.select do |appt|
+      if appt.patient == self
+        @doctors << appt.doctor
+      end      
+    end
 end
