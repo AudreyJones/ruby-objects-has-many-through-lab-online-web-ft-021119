@@ -28,6 +28,7 @@ class Doctor
     Appointment.all.select do |appt|
       if appt.doctor == self
         @patients << appt.patient
+        binding.pry
     end
   end
 
