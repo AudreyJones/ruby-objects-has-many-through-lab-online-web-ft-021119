@@ -27,7 +27,7 @@ class Doctor
   def patients
     Appointment.all.select do |appt|
       if appt.doctor == self
-        
+
     end
   end
 
