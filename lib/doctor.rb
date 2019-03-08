@@ -25,7 +25,7 @@ class Doctor
 
   def patients
     Patient.all.select do |patient|
-      
+
     end
   end
 
