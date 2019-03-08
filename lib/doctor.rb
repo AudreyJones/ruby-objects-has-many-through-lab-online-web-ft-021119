@@ -23,5 +23,9 @@ class Doctor
     Appointment.new(date, patient, self)
   end
 
+  def patients
+
+  end
+
 
 end
