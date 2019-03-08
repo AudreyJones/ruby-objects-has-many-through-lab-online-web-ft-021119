@@ -5,7 +5,6 @@ class Doctor
   def initialize(name)
     @name = name
     @@all << self
-    @appointments = []
   end
 
   def self.all
@@ -23,7 +22,7 @@ class Doctor
   def new_appointment(patient, date)
     # binding.pry
      new_appt = Appointment.new(date, patient, self)
-     self.appointments << new_appt
+     self.appointments.all << new_appt
     # binding.pry
   end
 
