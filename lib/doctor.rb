@@ -5,6 +5,7 @@ class Doctor
   def initialize(name)
     @name = name
     @@all << self
+    @patients = []
   end
 
   def self.all
@@ -24,8 +25,9 @@ class Doctor
   end
 
   def patients
-    Patient.all.select do |patient|
-
+    Appointment.all.select do |appt|
+      if appt.doctor == self
+        
     end
   end
 
